@@ -18,7 +18,7 @@ export function TodoForm() {
       }}
     >
       <Input name="title" />
-      <SubmitButton>Save</SubmitButton>
+      <SubmitButton type="button">Save</SubmitButton>
     </form>
   );
 }
