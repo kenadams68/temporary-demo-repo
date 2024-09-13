@@ -26,7 +26,7 @@ export function TodoList() {
   const todos = getTodos();
 
   return (
-    todos.length && (
+    !todos.length && (
       <ul className="flex flex-col gap-2">
         {todos.map((todo) => {
           return <TodoListItem key={todo.id} todo={todo} />;
