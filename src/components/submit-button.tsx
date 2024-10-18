@@ -4,7 +4,7 @@ import { useFormStatus } from "react-dom";
 import { Button, ButtonProps } from "./ui/button";
 import { Loader2 } from "lucide-react";
 
-type SubmitButtonProps = Pick<ButtonProps, "size" | "children">;
+type SubmitButtonProps = Pick<ButtonProps, "size" | "className" | "children">;
 
 export function SubmitButton({ children, ...rest }: SubmitButtonProps) {
   const { pending } = useFormStatus();
